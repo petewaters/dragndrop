@@ -19,5 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/sections/{section}/edit', 'SectionController@edit');
-Route::patch('/sections/{section}/edit', 'SectionController@update');
+Route::get('/sections/{section}/edit', 'SectionController@edit')->name('section.edit');
+Route::patch('/sections/{section}/edit', 'SectionController@update')->name('section.update');
